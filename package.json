@@ -1,0 +1,16 @@
+{
+  "name": "boardmate-frontend",
+  "private": true,
+  "scripts": {
+    "check": "prettier --check index.html styles.css app.js README.md package.json && html-validate index.html && stylelint styles.css && node --check app.js"
+  },
+  "devDependencies": {
+    "html-validate": "^10.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^38.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  }
+}

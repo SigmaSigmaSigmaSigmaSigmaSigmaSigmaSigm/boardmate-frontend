@@ -1,0 +1,101 @@
+:root {
+  color: #252921;
+  background: #f8f6ef;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+header {
+  border-bottom: 3px solid #252921;
+  padding-bottom: 24px;
+}
+
+.label {
+  color: #526348;
+  font-size: 14px;
+}
+
+h1 {
+  margin: 12px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(44px, 8vw, 80px);
+  letter-spacing: -3px;
+}
+
+h1 span {
+  color: #cd571c;
+}
+
+#status {
+  margin: 28px 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+caption {
+  text-align: left;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #b9bbac;
+}
+
+th {
+  background: #e5eadb;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+button {
+  padding: 10px 16px;
+  border: 1px solid #526348;
+  background: #fffdf7;
+  color: #252921;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid #cd571c;
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button:hover:enabled {
+  background: #e5eadb;
+}
