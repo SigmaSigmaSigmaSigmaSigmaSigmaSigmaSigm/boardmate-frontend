@@ -4,7 +4,7 @@
 
 ## Як запустити проєкт
 
-Потрібен Python 3. Спочатку запустіть [бекенд BoardMate](https://github.com/SigmaSigmaSigmaSigmaSigmaSigmaSigmaSigm/boardmate) з гілки поточної лабораторної: встановіть залежності, застосуйте міграції та виконайте `python manage.py runserver 8000` за його README.
+Потрібен Python 3. Спочатку запустіть [бекенд BoardMate](https://github.com/SigmaSigmaSigmaSigmaSigmaSigmaSigmaSigm/boardmate) з гілки `feat/jwt-accounts`: встановіть залежності, застосуйте міграції та виконайте `python manage.py runserver 8000` за його README.
 
 У папці фронтенду:
 
