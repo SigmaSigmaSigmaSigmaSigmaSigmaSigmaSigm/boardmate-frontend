@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Реєстрація — BoardMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="auth.js" defer></script>
+  </head>
+  <body data-page="register">
+    <main>
+      <nav id="account-nav" aria-label="Акаунт"></nav>
+      <p id="auth-message" role="status"></p>
+      <h1>Реєстрація</h1>
+      <p id="form-message" role="alert"></p>
+      <form id="auth-form" hidden>
+        <div class="form-field">
+          <label for="username">Нік *</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            maxlength="150"
+            required
+            autocomplete="username"
+            aria-describedby="username-error"
+          />
+          <p class="field-error" id="username-error"></p>
+        </div>
+        <div class="form-field">
+          <label for="first_name">Ім’я</label>
+          <input
+            id="first_name"
+            name="first_name"
+            type="text"
+            maxlength="150"
+            autocomplete="given-name"
+            aria-describedby="first_name-error"
+          />
+          <p class="field-error" id="first_name-error"></p>
+        </div>
+        <div class="form-field">
+          <label for="last_name">Прізвище</label>
+          <input
+            id="last_name"
+            name="last_name"
+            type="text"
+            maxlength="150"
+            autocomplete="family-name"
+            aria-describedby="last_name-error"
+          />
+          <p class="field-error" id="last_name-error"></p>
+        </div>
+        <div class="form-field">
+          <label for="email">Пошта *</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            maxlength="254"
+            required
+            autocomplete="email"
+            aria-describedby="email-error"
+          />
+          <p class="field-error" id="email-error"></p>
+        </div>
+        <div class="form-field">
+          <label for="password">Пароль *</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            maxlength="128"
+            minlength="8"
+            required
+            autocomplete="new-password"
+            aria-describedby="password-error"
+          />
+          <p class="field-error" id="password-error"></p>
+        </div>
+        <div class="form-field">
+          <label for="password_confirmation">Повторіть пароль *</label>
+          <input
+            id="password_confirmation"
+            name="password_confirmation"
+            type="password"
+            maxlength="128"
+            minlength="8"
+            required
+            autocomplete="new-password"
+            aria-describedby="password_confirmation-error"
+          />
+          <p class="field-error" id="password_confirmation-error"></p>
+        </div>
+        <button type="submit">Зареєструватися</button>
+      </form>
+    </main>
+  </body>
+</html>

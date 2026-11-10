@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Вхід — BoardMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="auth.js" defer></script>
+  </head>
+  <body data-page="login">
+    <main>
+      <nav id="account-nav" aria-label="Акаунт"></nav>
+      <p id="auth-message" role="status"></p>
+      <h1>Вхід</h1>
+      <p id="form-message" role="alert"></p>
+      <form id="auth-form" hidden>
+        <div class="form-field">
+          <label for="username">Нік *</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            maxlength="150"
+            required
+            autocomplete="username"
+            aria-describedby="username-error"
+          />
+          <p class="field-error" id="username-error"></p>
+        </div>
+        <div class="form-field">
+          <label for="password">Пароль *</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            maxlength="128"
+            required
+            autocomplete="current-password"
+            aria-describedby="password-error"
+          />
+          <p class="field-error" id="password-error"></p>
+        </div>
+        <button type="submit">Увійти</button>
+      </form>
+    </main>
+  </body>
+</html>
