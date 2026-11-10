@@ -2,7 +2,8 @@
   "name": "boardmate-frontend",
   "private": true,
   "scripts": {
-    "check": "prettier --check index.html styles.css app.js README.md package.json && html-validate index.html && stylelint styles.css && node --check app.js"
+    "check": "prettier --check \"*.html\" \"*.js\" \"*.cjs\" styles.css README.md package.json && html-validate \"*.html\" && stylelint styles.css && node --check app.js && node --check auth.js && npm test",
+    "test": "node --test auth.test.cjs"
   },
   "devDependencies": {
     "html-validate": "^10.0.0",

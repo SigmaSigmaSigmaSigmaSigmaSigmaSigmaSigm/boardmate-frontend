@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Мій акаунт — BoardMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="auth.js" defer></script>
+  </head>
+  <body data-private="true">
+    <main>
+      <nav id="account-nav" aria-label="Акаунт"></nav>
+      <p id="auth-message" role="status"></p>
+      <h1>Мій акаунт</h1>
+      <section id="profile" hidden aria-label="Дані акаунта">
+        <h2>Власні дані</h2>
+        <dl>
+          <dt>Нік</dt>
+          <dd id="profile-username"></dd>
+          <dt>Ім’я</dt>
+          <dd id="profile-first_name"></dd>
+          <dt>Прізвище</dt>
+          <dd id="profile-last_name"></dd>
+          <dt>Пошта</dt>
+          <dd id="profile-email"></dd>
+        </dl>
+        <p id="profile-role"></p>
+      </section>
+    </main>
+  </body>
+</html>
